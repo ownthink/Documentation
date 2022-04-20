@@ -80,15 +80,6 @@ module.exports = {
       '/': getDemoSidebar(),
     }
   },
-  markdown: {
-    config: (md) => {
-      const {
-        demoBlockPlugin
-      } = require('vitepress-theme-demoblock')
-      md.use(demoBlockPlugin)
-    },
-    lineNumbers: true
-  }
 }
   
   function getDemoSidebar() {
